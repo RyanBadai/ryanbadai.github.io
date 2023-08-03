@@ -11978,3 +11978,30 @@ html {
 .social-icon li a:hover {
   transform: translateY(-10px);
 }
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: #050108;
+}
+
+.project-card {
+  height: 450px; /* Set a fixed height for the project cards */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.read-more-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #007bff; /* Change the color to match your design */
+}
+
+#more {
+  display: none;
+}
+
+.stage {
+  border-radius: 0.3rem;
+}

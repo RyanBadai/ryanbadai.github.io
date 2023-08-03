@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Skills</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a></li>
             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -89,40 +89,81 @@
         </div>
       </div>
     </section>
-    <!-- Portfolio Section-->
-    <section class="page-section bg-dark text-white portfolio gradient" id="portfolio">
-      <div class="container">
-        <!-- Portfolio Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Skills</h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-          <div class="divider-custom-line"></div>
-        </div>
-        <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center">
-          <!-- Portfolio Item 1-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div class="portfolio-item-caption-content text-center text-black"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid transisition" src="assets/img/portfolio/Untitled-1.png" alt="..." />
-            </div>
-          </div>
-          <!-- Portfolio Item 2-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div class="portfolio-item-caption-content text-center text-black"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/Untitled-2.png" alt="..." />
-            </div>
-          </div>
-        </div>
+    <!-- Projects Section-->
+<section class="page-section bg-dark text-white portfolio gradient" id="projects">
+    <div class="container">
+      <!-- Projects Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Projects</h2>
+      <!-- Icon Divider-->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
       </div>
-    </section>
+      <!-- Projects Grid -->
+      <div class="row justify-content-center">
+        <!-- Project Card 1-->
+        <div class="col-md-5 col-lg-5 mb-5">
+            <div class="card mx-auto" style="width: 23rem;">
+              <img class="card-img-top" src="assets/citayam.PNG" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a class="card-link" href="https://prosiding-senada.upnjatim.ac.id/index.php/senada/article/view/47" target="_blank">Sentiment Analytic in Twitter with Keyword "Citayam Fashion Week"</a>
+                </h5>
+                <p align="justify" class="card-text text-black">Using Library Scrapy for Scraping Data with Python, the response text data is obtained and processed <span id="dots1">...</span><span id="more1"> Sentiment analysis is carried out to find out what sentiments fulfill this phenomenon. After that, it is visualized using Wordcloud for each sentiment that is formed. Finally, topic modeling was conducted to find out the dominant words in tweet responses that said the key to Citayam Fashion Week.</span></p>
+                <button onclick="myFunction(1)" id="myBtn1" class="stage">Read more</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Project Card 2-->
+        <div class="col-md-5 col-lg-5 mb-5">
+          <div class="card mx-auto" style="width: 23rem;">
+            <img class="card-img-top" src="assets/pneumonia.PNG" alt="Project 2" />
+            <div class="card-body">
+              <h5 class="card-title">
+                <a class="card-link" href="https://medium.com/@ryanbadai/pneumonia-classification-using-cnn-method-with-inceptionv3-architecture-847363eb99b3" target="_blank">Pneumonia Classification using CNN Method with InceptionV3 Architecture</a>
+              </h5>
+              <p align="justify" class="card-text text-black">Pneumonia is a severe respiratory infectious disease that affects millions of people worldwide, causing  <span id="dots2">...</span><span id="more2"> significant morbidity and mortality. Timely diagnosis of pneumonia is essential for effective treatment and patient management. In recent years, the fields of medical imaging and deep learning have shown great promise in assisting healthcare professionals in diagnosing various diseases, including pneumonia. Convolutional Neural Network (CNN) has emerged as a powerful machine learning technique for image classification tasks. CNNs excel in learning complex patterns and features from images, making them suitable for medical image analysis. One of the popular CNN architectures used in medical imaging is InceptionV3 which has shown outstanding performance in various computer vision tasks.</span></p>
+              <button onclick="myFunction(2)" id="myBtn2" class="stage">Read more</button>
+            </div>
+          </div>
+        </a>
+      </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- Project Card 3-->
+        <div class="col-md-5 col-lg-5 mb-5">
+          <div class="card mx-auto" style="width: 23rem;">
+            <img class="card-img-top" src="assets/anime.PNG" alt="Project 3" />
+            <div class="card-body">
+              <h5 class="card-title">
+                <a class="card-link" href="https://medium.com/@ryanbadai/analysis-anime-dataset-in-python-489285d7ad24" target="_blank">Analysis Anime Dataset in Python</a>
+              </h5>
+              <p align="justify" class="card-text text-black">Using Python, I analyzed the anime dataset to find any information from the dataset. Within the dataset, I would not use all columns, but only Title, Type, Episodes, Status, Starting, Broadcast, Producers, Licensors, Studios, <span id="dots3">...</span><span id="more3">  Sources, Genres, Duration, Rating, Score, Scored by, Members, Favorites, and Description.</span></p>
+              <button onclick="myFunction(3)" id="myBtn3" class="stage">Read More</button>
+            </div>
+          </div>
+        </a>
+      </div>
+        <!-- Project Card 4-->
+        <div class="col-md-5 col-lg-5 mb-5">
+          <div class="card mx-auto" style="width: 23rem;">
+            <img class="card-img-top" src="assets/clothes.PNG" alt="Project 4" />
+            <div class="card-body">
+              <h5 class="card-title">
+                <a class="card-link" href="https://github.com/RyanBadai/Capstone-Project-C23-PS463/blob/main/ML/Clothes%20Recognition/Clothes_Recognition.ipynb" target="_blank">Clothes Recognition with CNN Method in My Capstone Project at Bangkit Program 2023</a>
+              </h5>
+              <p align="justify" class="card-text text-black">In the increasingly advanced digital era, recognition and classification of objects in images has <span id="dots4">...</span><span id="more4"> become an interesting and important research topic. One application that attracts attention in this regard is shirt type recognition. Shirt type recognition has many potential applications, such as in the fashion industry, e-commerce, and the development of interactive systems that require an understanding of the types and characteristics of clothes. In this journal, the author uses the Convolutional Neural Network (CNN) method. CNN or Convolutional Neural Network is one of the Machine Learning methods from the development of Multi Layer Perceptron (MLP) which is designed to process two-dimensional data. CNN is a type of Deep Neural Network because it includes a network level and is widely implemented in image data. After the model is run with the number of iterations or epochs of 100 epochs, the Accuracy result is 90.4% and Model Loss is 0.29%. Based on the test results, it can be concluded that using MobileNet architecture can get better results.</span></p>
+              <button onclick="myFunction(4)" id="myBtn4" class="stage">Read more</button>
+            </div>
+          </div>
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
+</section>
     <!-- Contact Section-->
     <section class="page-contact mb-0" id="contact">
       <div class="container">
@@ -159,72 +200,7 @@
       <div class="container text-white text-center fw-bold pb-2">
         <small>Created by &copy; Ryan Badai Alamsyah</small>
       </div>
-    </footer>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-          <div class="modal-body text-center pb-5">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title-->
-                  <h2 class="portfolio-modal-title text-black text-uppercase mb-0">Programming</h2>
-                  <!-- Icon Divider-->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image-->
-                  <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Untitled-1.png" alt="..." />
-                  <!-- Portfolio Modal - Text-->
-                  <p class="mb-4">Bahasa yang saya gunakan adalah Python, R, SQL, dan NoSQL yang berhubungan dengan Data Science.</p>
-                  <button class="btn btn-dark" href="#!" data-bs-dismiss="modal">
-                    <i class="fa-times fa-fw"></i>
-                    Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-          <div class="modal-body text-center pb-5">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <!-- Portfolio Modal - Title-->
-                  <h2 class="portfolio-modal-title text-black text-uppercase mb-0">Editing</h2>
-                  <!-- Icon Divider-->
-                  <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                  </div>
-                  <!-- Portfolio Modal - Image-->
-                  <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Untitled-2.png" alt="..." />
-                  <!-- Portfolio Modal - Text-->
-                  <p class="mb-4">Tools yang saya gunakan adalah Adobe Premiere untuk mengedit video dan Adobe Photoshop untuk mengedit foto.</p>
-                  <button class="btn btn-dark" href="#!" data-bs-dismiss="modal">
-                    <i class="fa-times fa-fw"></i>
-                    Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer>   
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
