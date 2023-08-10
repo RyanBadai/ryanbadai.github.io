@@ -12005,3 +12005,31 @@ html {
 .stage {
   border-radius: 0.3rem;
 }
+
+.icon {
+  margin-left: 5cm;
+}
+
+.section-heading {
+  margin-top: 50px;
+}
+
+/* Add responsive styling for icons */
+.icon-img {
+  height: 60px;
+  margin-left: 0.7cm;
+}
+
+@media (max-width: 768px) {
+  .icon-img {
+    height: 40px;
+    margin-left: 0.3cm;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon {
+    height: 40px;
+    margin-left: 0.3cm;
+  }
+}
