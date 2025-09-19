@@ -1,668 +1,526 @@
 <!DOCTYPE html>
-<html>
+<html lang="id" class="scroll-smooth">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Badai Alamsyah</title>
-    <link rel="icon" type="image/x-icon" href="images/icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" />
-
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet" />
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css" />
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <!-- Flexslider  -->
-    <link rel="stylesheet" href="css/flexslider.css" />
-    <!-- Flaticons  -->
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <!-- Theme style  -->
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="images/icon3.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
   </head>
-  <body>
-    <div id="colorlib-page">
-      <div class="container-wrap">
-        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-        <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-          <div class="text-center">
-            <div class="author-img" style="background-image: url(images/about.jpg)"></div>
-            <h1 id="colorlib-logo"><a href="index.html">Ryan Badai Alamsyah</a></h1>
-            <span class="position"><a href="#">Data Scientist</a></span>
-          </div>
-          <nav id="colorlib-main-menu" role="navigation" class="navbar">
-            <div id="navbar" class="collapse">
-              <ul>
-                <li class="active"><a href="#" data-nav-section="home">Home</a></li>
-                <li><a href="#" data-nav-section="about">About</a></li>
-                <li><a href="#" data-nav-section="skills">Skills</a></li>
-                <li><a href="#" data-nav-section="education">Education</a></li>
-                <li><a href="#" data-nav-section="experience">Experience</a></li>
-                <li><a href="#" data-nav-section="work">Project</a></li>
-                <li><a href="#" data-nav-section="contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-        </aside>
+  <body class="bg-gray-50 text-gray-800">
+    <div class="flex min-h-screen">
+      <!-- Tombol Menu Mobile -->
+      <button id="menu-toggle" class="lg:hidden fixed top-4 right-4 z-50 bg-white p-2 rounded-md shadow-md">
+        <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+        <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-        <div id="colorlib-main">
-          <section id="colorlib-hero" class="js-fullheight" data-section="home">
-            <div class="flexslider js-fullheight">
-              <ul class="slides">
-                <li style="background-image: url(images/img_bg_1.jpg)">
-                  <div class="overlay"></div>
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                        <div class="slider-text-inner js-fullheight">
-                          <div class="desc">
-                            <h1>Hi! <br />I'm Ryan</h1>
-                            <!-- <p>
-                              <a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a>
-                            </p> -->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li style="background-image: url(images/img_bg_2.jpg)">
-                  <div class="overlay"></div>
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                        <div class="slider-text-inner">
-                          <div class="desc">
-                            <h1>I am a<br />Data Scientist</h1>
-                            <!-- <p>
-                              <a class="btn btn-primary btn-learn">View Project <i class="icon-briefcase3"></i></a>
-                            </p> -->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <section class="colorlib-about" data-section="about">
-            <div class="colorlib-narrow-content">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                    <div class="col-md-12">
-                      <div class="about-desc">
-                        <span class="heading-meta">About Us</span>
-                        <h2 class="colorlib-heading">Who Am I?</h2>
-                        <p align="justify">
-                          <strong>Hi I'm Ryan Badai Alamsyah, </strong> I have a strong background in data analysis, statistical modeling, and machine learning, with proficiency in Python, R, and SQL. My skills encompass the ability to
-                          collect, clean, and derive insights from diverse datasets. I am also adept at presenting analysis results through powerful visualization tools like Matplotlib and Seaborn, which helps in making data-driven
-                          decisions more comprehensible and impactful.
-                        </p>
-                        <p align="justify">
-                          In addition to my analytical skills, I am well-versed in data engineering tools such as Pentaho, Spark, and Oracle. My strong collaborative abilities enable me to work effectively within teams, and I am committed
-                          to continuous learning and professional development. I am dedicated to advancing my expertise in the field of data science, ensuring that I stay at the forefront of technological advancements and industry trends.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-                      <div class="services color-1">
-                        <span class="icon2">
-                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" style="height: 40px" />
-                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL Logo" style="height: 40px" />
-                        </span>
-                        <h3>Programming</h3>
-                      </div>
-                    </div>
-                    <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-                      <div class="services color-2">
-                        <span class="icon2">
-                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow Logo" style="height: 40px" />
-                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" alt="TensorFlow Logo" style="height: 40px" />
-                        </span>
-                        <h3>Data Scientist</h3>
-                      </div>
-                    </div>
-                    <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-                      <div class="services color-3">
-                        <span class="icon2">
-                          <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="Excel Logo" style="height: 40px" />
-                          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI Logo" style="height: 40px" />
-                        </span>
-                        <h3>Data Analyst</h3>
-                      </div>
-                    </div>
-                    <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-                      <div class="services color-4">
-                        <span class="icon2">
-                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle Logo" style="height: 40px" />
-                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" alt="Spark Logo" style="height: 40px" />
-                        </span>
-                        <h3>Data Engineer</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg)" data-stellar-background-ratio="0.5">
-            <div class="overlay"></div>
-            <div class="colorlib-narrow-content">
-              <div class="row"></div>
-              <div class="row">
-                <div class="col-md-3 text-center animate-box">
-                  <span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
-                  <span class="colorlib-counter-label">Cups of coffee</span>
-                </div>
-                <div class="col-md-3 text-center animate-box">
-                  <span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
-                  <span class="colorlib-counter-label">Projects</span>
-                </div>
-                <div class="col-md-3 text-center animate-box">
-                  <span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
-                  <span class="colorlib-counter-label">Clients</span>
-                </div>
-                <div class="col-md-3 text-center animate-box">
-                  <span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
-                  <span class="colorlib-counter-label">Partners</span>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <section class="colorlib-skills" data-section="skills">
-            <div class="colorlib-narrow-content">
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                  <span class="heading-meta">My Specialty</span>
-                  <h2 class="colorlib-heading animate-box">My Skills</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                  <p align="justify">
-                    I specialize in data analysis, statistical modeling, and machine learning, with proficiency in Python, R, and SQL. My expertise lies in collecting, cleaning, and extracting insights from diverse datasets, and effectively
-                    presenting results using visualization tools like Matplotlib and Seaborn. Additionally, I am skilled in data engineering with tools such as Pentaho, Spark, and Oracle. With strong collaborative abilities and a commitment
-                    to continuous learning, I am dedicated to advancing my expertise in the field of data science.
-                  </p>
-                </div>
-                <div class="col-xs-12 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="progress-wrap">
-                    <h3>Python</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                        <span>90%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-                  <div class="progress-wrap">
-                    <h3>SQL</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                        <span>80%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="progress-wrap">
-                    <h3>TensorFlow</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-3" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%">
-                        <span>88%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-                  <div class="progress-wrap">
-                    <h3>Excel</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                        <span>80%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="progress-wrap">
-                    <h3>Power BI</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                        <span>80%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-                  <div class="progress-wrap">
-                    <h3>Oracle</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-6" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                        <span>70%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="colorlib-education" data-section="education">
-            <div class="colorlib-narrow-content">
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                  <span class="heading-meta">Education</span>
-                  <h2 class="colorlib-heading animate-box">Education</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="fancy-collapse-panel">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bachelor Degree of Data Science </a>
-                          </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                          <div class="panel-body">
-                            <p>Universitas Pembangunan Nasional "Veteran" Jawa Timur</p>
-                            <ul>
-                              <li>GPA = 3.94</li>
-                              <li>Learn methods that are most commonly used in Data Science and Machine Learning, such as Regression, Clustering, Neural Networks, etc.</li>
-                              <li>Learn the tools used in Data Engineering processing, such as Pentaho, Google Big Query, etc.</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Senior High School 1 Gedangan </a>
-                          </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                          <div class="panel-body">
-                            <p align="justify">
-                              During my high school years, I developed a strong foundation in various disciplines, with a special focus on statistics to prepare for higher education. I studied fundamental concepts and statistical methods,
-                              which helped me understand data and perform basic analyses. This learning included understanding data distributions, using charts and tables, and grasping the basics of probability. This knowledge not only
-                              prepared me for college but also sparked my interest in the fields of data analysis and machine learning.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="colorlib-experience" data-section="experience">
-            <div class="colorlib-narrow-content">
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                  <span class="heading-meta">Experience</span>
-                  <h2 class="colorlib-heading animate-box">Experience</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="timeline-centered">
-                    <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-                      <div class="timeline-entry-inner">
-                        <div class="timeline-icon color-3">
-                          <i class="icon-pen2"></i>
-                        </div>
-                        <div class="timeline-label">
-                          <h2>
-                            PL-300: Microsoft Power BI Data Analyst and Skilvul Innovation Challenge Cycle 2
-                            <br />
-                            <span>April 2024 - July 2024</span>
-                          </h2>
-                          <p>
-                            <li>Mastered Power BI: data preparation, modeling, visualization, analysis, and dashboard deployment and maintenance.</li>
-                            <li>Developed and deployed Diabetes Vision, a web app using Streamlit for diabetes risk analysis and personalized nutritional recommendations from food photo uploads.</li>
-                            <li>Designed Power BI dashboards visualizing the nutritional content of foods to aid informed dietary decisions.</li>
-                            <li>Awarded Best Booth for our outstanding presentation to the jury, effectively showcasing our project and impressing the evaluators during their visit.</li>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-                      <div class="timeline-entry-inner">
-                        <div class="timeline-icon color-4">
-                          <i class="icon-pen2"></i>
-                        </div>
-                        <div class="timeline-label">
-                          <h2>
-                            Bangkit Academy 2023 Cohort - Machine Learning
-                            <br />
-                            <span>February 2023 - July 2023</span>
-                          </h2>
-                          <p>
-                            <li>Learn more in-depth material about Machine Learning methods, such as TensorFlow, Neural Networks, Time Series, etc.</li>
-                            <li>Learn to work in teams to complete assigned projects and brainstorm ideas with other team members.</li>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                      <div class="timeline-entry-inner">
-                        <div class="timeline-icon color-5">
-                          <i class="icon-pen2"></i>
-                        </div>
-                        <div class="timeline-label">
-                          <h2>
-                            Back End Developer Internship at PT Jawa Pos Multimedia
-                            <br />
-                            <span>September 2022 - December 2022</span>
-                          </h2>
-                          <p>
-                            <li>Manage a web-based application developed by JTV called Gawedata.</li>
-                            <li>Fixing bugs that are found in the Gawedata application.</li>
-                            <li>Collaborate with the team to develop the Gawedata application.</li>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                      <div class="timeline-entry-inner">
-                        <div class="timeline-icon color-none"></div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="colorlib-work" data-section="work">
-            <div class="colorlib-narrow-content">
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                  <span class="heading-meta">My Project</span>
-                  <h2 class="colorlib-heading animate-box">Recent Project</h2>
-                </div>
-              </div>
-              <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                <div class="col-md-12">
-                  <p class="work-menu">
-                    <span><a href="#" class="active" data-filter="all">All</a></span>
-                    <span><a href="#" data-filter="data-scientist">Data Scientist</a></span>
-                    <span><a href="#" data-filter="data-analyst">Data Analyst</a></span>
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-6 animate-box data-scientist" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="" class="blog-img"><img src="images/project-like.png" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>August 8, 2024</small> | <small>Data Scientist</small></span>
-                      <h3>
-                        <a href=" ">Pilah Bijak: Classify Waste, Secure the Future!</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-analyst" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://github.com/RyanBadai/Diabetes-Vision?tab=readme-ov-file" class="blog-img"><img src="images/project-diabetesvision.png" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>July 18, 2024</small> | <small>Data Analyst</small></span>
-                      <h3>
-                        <a href="https://github.com/RyanBadai/Diabetes-Vision?tab=readme-ov-file"> Diabetes-Vision: Balance Carbs, Balance Sugar, Beat Diabetes</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-scientist" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://medium.com/@ryanbadai/song-recommended-system-using-content-based-filtering-with-k-means-clustering-dd264652ab90" class="blog-img"
-                      ><img src="images/project-music.png" class="img-responsive" alt="Ryan Badai Alamsyah"
-                    /></a>
-                    <div class="desc">
-                      <span><small>June 13, 2024</small> | <small>Data Scientist</small></span>
-                      <h3>
-                        <a href="https://medium.com/@ryanbadai/song-recommended-system-using-content-based-filtering-with-k-means-clustering-dd264652ab90">Song-Recommended System using Content-Based Filtering with K-Means Clustering</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-analyst" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://github.com/RyanBadai/Breast-Cancer-Prediction-with-SVM" class="blog-img"><img src="images/project-cancer.png" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>May 30, 2024</small> | <small>Data Analyst</small></span>
-                      <h3>
-                        <a href="https://github.com/RyanBadai/Breast-Cancer-Prediction-with-SVM">Breast Cancer Prediction with Suport Vector Machine (SVM) Method</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-analyst" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://medium.com/@ryanbadai/power-bi-dashboard-for-sales-performance-12b7f54f7ac9" class="blog-img"><img src="images/project-image-1.jpg" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>May 19, 2024</small> | <small>Data Analyst</small></span>
-                      <h3>
-                        <a href="https://medium.com/@ryanbadai/power-bi-dashboard-for-sales-performance-12b7f54f7ac9">Power BI Dashboard for Sales Performance</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-analyst" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://github.com/RyanBadai/House_Price_Prediction" class="blog-img"><img src="images/project-image-2.jpg" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>April 5, 2024</small> | <small>Data Analyst</small></span>
-                      <h3>
-                        <a href="https://github.com/RyanBadai/House_Price_Prediction">House Price Prediction</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-scientist" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://repository.upnjatim.ac.id/20278/" class="blog-img"><img src="images/project-image-3.jpg" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>January 19, 2024</small> | <small>Data Scientist</small></span>
-                      <h3><a href="https://repository.upnjatim.ac.id/20278">MobileNet-V2 VS Inception-V3 Architecture in Clothing Recognition Case</a></h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-scientist" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://medium.com/@ryanbadai/pneumonia-classification-using-cnn-method-with-inceptionv3-architecture-847363eb99b3" class="blog-img"
-                      ><img src="images/project-image-4.jpg" class="img-responsive" alt="Ryan Badai Alamsyah"
-                    /></a>
-                    <div class="desc">
-                      <span><small>July 18, 2023</small> | <small>Data Scientist</small></span>
-                      <h3><a href="https://medium.com/@ryanbadai/pneumonia-classification-using-cnn-method-with-inceptionv3-architecture-847363eb99b3">Pneumonia Classification using CNN Method with InceptionV3 Architecture</a></h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-scientist" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://github.com/HartsaRizq/Capstone-Project-C23-PS463" class="blog-img"><img src="images/project-image-5.jpg" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>June 15, 2023</small> | <small>Data Scientist</small></span>
-                      <h3>
-                        <a href="https://github.com/HartsaRizq/Capstone-Project-C23-PS463">Clothing Recognition for Wearit Project in Bangkit Academy 2023</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-analyst" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://medium.com/@ryanbadai/analysis-anime-dataset-in-python-489285d7ad24" class="blog-img"><img src="images/project-image-6.jpg" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>December 5, 2022</small> | <small>Data Analyst</small></span>
-                      <h3>
-                        <a href="https://medium.com/@ryanbadai/analysis-anime-dataset-in-python-489285d7ad24">Analysis Anime Dataset in Python</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 animate-box data-analyst" data-animate-effect="fadeInLeft">
-                  <div class="blog-entry">
-                    <a href="https://prosiding-senada.upnjatim.ac.id/index.php/senada/article/view/47" class="blog-img"><img src="images/project-image-7.jpg" class="img-responsive" alt="Ryan Badai Alamsyah" /></a>
-                    <div class="desc">
-                      <span><small>November 29, 2022</small> | <small>Data Analyst</small></span>
-                      <h3>
-                        <a href="https://prosiding-senada.upnjatim.ac.id/index.php/senada/article/view/47">Sentiment Analytic in Twitter with Keyword "Citayam Fashion Week"</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="colorlib-contact" data-section="contact">
-            <div class="colorlib-narrow-content">
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                  <span class="heading-meta">Get in Touch</span>
-                  <h2 class="colorlib-heading">Contact</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="colorlib-feature colorlib-feature-sm">
-                    <div class="colorlib-icon">
-                      <i class="icon-globe-outline"></i>
-                    </div>
-                    <div class="colorlib-text">
-                      <p>ryanbadaia11@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="colorlib-feature colorlib-feature-sm">
-                    <div class="colorlib-icon">
-                      <i class="icon-location"></i>
-                    </div>
-                    <div class="colorlib-text">
-                      <p>Sidoarjo, East Java, Indonesia</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="colorlib-feature colorlib-feature-sm">
-                    <div class="colorlib-icon">
-                      <i class="icon-phone"></i>
-                    </div>
-                    <div class="colorlib-text">
-                      <p>(+62)81 703 542 219</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="colorlib-feature colorlib-feature-sm">
-                    <div class="colorlib-icon">
-                      <i class="icon-instagram"></i>
-                    </div>
-                    <div class="colorlib-text">
-                      <p><a href="https://www.instagram.com/ryanbadai/">Instagram</a></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="colorlib-feature colorlib-feature-sm">
-                    <div class="colorlib-icon">
-                      <i class="icon-linkedin22"></i>
-                    </div>
-                    <div class="colorlib-text">
-                      <p><a href="https://www.linkedin.com/in/ryanbadai/">Linkedin</a></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div class="colorlib-feature colorlib-feature-sm">
-                    <div class="colorlib-icon">
-                      <i class="icon-twitter2"></i>
-                    </div>
-                    <div class="colorlib-text">
-                      <p><a href="https://x.com/RyanBadai2">Twitter</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+      <!-- Sidebar Navigasi -->
+      <aside id="sidebar" class="w-64 bg-white shadow-lg fixed top-0 left-0 h-full z-40 transform -translate-x-full transition-transform duration-300 ease-in-out lg:translate-x-0 flex flex-col">
+        <div class="p-8 text-center border-b flex-shrink-0">
+          <img src="images/ryan.png" alt="Ryan Badai Alamsyah" class="profile-picture w-32 h-32 rounded-full mx-auto mb-4 border-4 border-red-100" />
+          <h1 class="text-lg font-bold text-gray-900"><a href="#home">Ryan Badai Alamsyah</a></h1>
+          <p class="text-sm text-red-600">Data Enthusiast</p>
         </div>
-        <!-- end:colorlib-main -->
-      </div>
-      <!-- end:container-wrap -->
+        <nav class="flex-1 px-4 py-6 overflow-y-auto">
+          <ul class="space-y-2">
+            <li><a href="#home" class="nav-link block font-medium px-4 py-2.5 rounded-lg hover:bg-red-50 relative transition-colors duration-200">Home</a></li>
+            <li><a href="#about" class="nav-link block font-medium px-4 py-2.5 rounded-lg hover:bg-red-50 relative transition-colors duration-200">About</a></li>
+            <li><a href="#skills" class="nav-link block font-medium px-4 py-2.5 rounded-lg hover:bg-red-50 relative transition-colors duration-200">Skills</a></li>
+            <li><a href="#education" class="nav-link block font-medium px-4 py-2.5 rounded-lg hover:bg-red-50 relative transition-colors duration-200">Education</a></li>
+            <li><a href="#experience" class="nav-link block font-medium px-4 py-2.5 rounded-lg hover:bg-red-50 relative transition-colors duration-200">Experience</a></li>
+            <li><a href="#work" class="nav-link block font-medium px-4 py-2.5 rounded-lg hover:bg-red-50 relative transition-colors duration-200">Project</a></li>
+            <li><a href="#contact" class="nav-link block font-medium px-4 py-2.5 rounded-lg hover:bg-red-50 relative transition-colors duration-200">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Backdrop untuk mobile menu -->
+      <div id="sidebar-backdrop" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden"></div>
+
+      <!-- Konten Utama -->
+      <main id="main-content" class="flex-1 lg:ml-64 transition-all duration-300">
+        <!-- Home -->
+        <section id="home" class="min-h-screen flex items-center justify-center bg-white p-6 md:p-12">
+          <div class="max-w-4xl text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">Hi!</h1>
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">I'm <span id="typing-animation" class="text-red-600"></span></h1>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-16 px-6 md:px-12 bg-white">
+          <div class="max-w-4xl mx-auto">
+            <span class="text-sm font-semibold text-red-600 uppercase">About Me</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Who Am I?</h2>
+            <div class="mt-8 text-gray-700 space-y-4 text-justify">
+              <p>
+                <strong>Hi I'm Ryan Badai Alamsyah, </strong> I have a strong background in data analysis, statistical modeling, and machine learning, with proficiency in Python, R, and SQL. My skills encompass the ability to collect,
+                clean, and derive insights from diverse datasets. I am also adept at presenting analysis results through powerful visualization tools like Matplotlib and Seaborn, which helps in making data-driven decisions more
+                comprehensible and impactful.
+              </p>
+              <p>
+                In addition to my analytical skills, I am well-versed in data engineering tools such as Pentaho, Spark, and Oracle. My strong collaborative abilities enable me to work effectively within teams, and I am committed to
+                continuous learning and professional development. I am dedicated to advancing my expertise in the field of data science, ensuring that I stay at the forefront of technological advancements and industry trends.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+              <!-- Card Service -->
+              <div class="bg-red-50 p-6 rounded-lg text-center">
+                <div class="flex justify-center items-center h-12 mb-4">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="h-10" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL Logo" class="h-10" />
+                </div>
+                <h3 class="font-semibold text-gray-900">Programming</h3>
+              </div>
+              <div class="bg-red-50 p-6 rounded-lg text-center">
+                <div class="flex justify-center items-center h-12 mb-4">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow Logo" class="h-10" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter Logo" class="h-10" />
+                </div>
+                <h3 class="font-semibold text-gray-900">Data Scientist</h3>
+              </div>
+              <div class="bg-red-50 p-6 rounded-lg text-center">
+                <div class="flex justify-center items-center h-12 mb-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="Excel Logo" class="h-10" />
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI Logo" class="h-10" />
+                </div>
+                <h3 class="font-semibold text-gray-900">Data Analyst</h3>
+              </div>
+              <div class="bg-red-50 p-6 rounded-lg text-center">
+                <div class="flex justify-center items-center h-12 mb-4">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle Logo" class="h-10" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" alt="Spark Logo" class="h-10" />
+                </div>
+                <h3 class="font-semibold text-gray-900">Data Engineer</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="py-16 px-6 md:px-12 bg-gray-50">
+          <div class="max-w-4xl mx-auto">
+            <span class="text-sm font-semibold text-red-600 uppercase">My Specialty</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">My Skills</h2>
+            <p class="mt-8 text-gray-700 text-justify">
+              I specialize in data analysis, statistical modeling, and machine learning, with proficiency in Python, R, and SQL. My expertise lies in collecting, cleaning, and extracting insights from diverse datasets, and effectively
+              presenting results using visualization tools like Matplotlib and Seaborn. Additionally, I am skilled in data engineering with tools such as Pentaho, Spark, and Oracle. With strong collaborative abilities and a commitment to
+              continuous learning, I am dedicated to advancing my expertise in the field of data science.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mt-10">
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-gray-700">Python</span>
+                  <span class="text-sm font-medium text-gray-700">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 90%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-gray-700">SQL</span>
+                  <span class="text-sm font-medium text-gray-700">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 80%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-gray-700">TensorFlow</span>
+                  <span class="text-sm font-medium text-gray-700">88%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 88%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-gray-700">Excel</span>
+                  <span class="text-sm font-medium text-gray-700">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 80%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-gray-700">Power BI</span>
+                  <span class="text-sm font-medium text-gray-700">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 80%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-base font-medium text-gray-700">Oracle</span>
+                  <span class="text-sm font-medium text-gray-700">70%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 70%"></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="py-16 px-6 md:px-12 bg-white">
+          <div class="max-w-4xl mx-auto">
+            <span class="text-sm font-semibold text-red-600 uppercase">Education</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Education</h2>
+            <div class="mt-10 space-y-4">
+              <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                <h3 class="font-bold text-lg text-gray-900">Bachelor Degree of Data Science</h3>
+                <p class="text-gray-600 mt-1">Universitas Pembangunan Nasional "Veteran" Jawa Timur</p>
+                <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+                  <li>GPA = 3.94 / 4.00</li>
+                  <li>Learn methods that are most commonly used in Data Science and Machine Learning, such as Regression, Clustering, Neural Networks, etc.</li>
+                  <li>Learn the tools used in Data Engineering processing, such as Pentaho, Google Big Query, etc.</li>
+                </ul>
+              </div>
+              <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                <h3 class="font-bold text-lg text-gray-900">Senior High School 1 Gedangan</h3>
+                <p class="mt-4 text-gray-700 text-justify">
+                  During my high school years, I developed a strong foundation in various disciplines, with a special focus on statistics to prepare for higher education. I studied fundamental concepts and statistical methods, which helped
+                  me understand data and perform basic analyses. This learning included understanding data distributions, using charts and tables, and grasping the basics of probability. This knowledge not only prepared me for college but
+                  also sparked my interest in the fields of data analysis and machine learning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="py-16 px-6 md:px-12 bg-gray-50">
+          <div class="max-w-4xl mx-auto">
+            <span class="text-sm font-semibold text-red-600 uppercase">Experience</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Work & Training Experience</h2>
+
+            <!-- Work Experience Subsection -->
+            <div class="mt-12">
+              <h3 class="text-2xl font-bold text-gray-800 mb-8">Work Experience</h3>
+              <div class="relative">
+                <!-- Timeline container for Work -->
+                <div class="timeline-item relative pl-12 pb-12">
+                  <div class="absolute left-0 top-1.5 h-10 flex items-center">
+                    <span class="block w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l2.5 2.5a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414L11 8.586V7z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-gray-900">Machine Learning Developer at Kementerian Lingkungan Hidup dan Kehutanan</h3>
+                    <p class="text-sm text-gray-500 mt-1">July 2024 - August 2024</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+                      <li>Designed and built a comprehensive dataset for waste classification.</li>
+                      <li>Developed a computer vision model to accurately identify various waste types.</li>
+                      <li>Collaborated with the development team to integrate the model into a working Android application.</li>
+                      <li>Demonstrated the application to a wide audience at the LIKE 2 Festival.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item relative pl-12 pb-12">
+                  <div class="absolute left-0 top-1.5 h-10 flex items-center">
+                    <span class="block w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l2.5 2.5a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414L11 8.586V7z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-gray-900">Back End Developer Internship at PT Jawa Pos Multimedia</h3>
+                    <p class="text-sm text-gray-500 mt-1">September 2022 - December 2022</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+                      <li>Manage a web-based application developed by JTV called Gawedata.</li>
+                      <li>Fixing bugs that are found in the Gawedata application.</li>
+                      <li>Collaborate with the team to develop the Gawedata application.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Training & Certification Subsection -->
+            <div class="mt-10">
+              <h3 class="text-2xl font-bold text-gray-800 mb-8">Training Experience</h3>
+              <div class="relative">
+                <!-- Timeline container for Training -->
+                <div class="timeline-item relative pl-12 pb-12">
+                  <div class="absolute left-0 top-1.5 h-10 flex items-center">
+                    <span class="block w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l2.5 2.5a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414L11 8.586V7z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-gray-900">PL-300: Microsoft Power BI Data Analyst and Skilvul Innovation Challenge Cycle 2</h3>
+                    <p class="text-sm text-gray-500 mt-1">April 2024 - July 2024</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+                      <li>Mastered Power BI: data preparation, modeling, visualization, analysis, and dashboard deployment and maintenance.</li>
+                      <li>Developed and deployed Diabetes Vision, a web app using Streamlit for diabetes risk analysis and personalized nutritional recommendations from food photo uploads.</li>
+                      <li>Designed Power BI dashboards visualizing the nutritional content of foods to aid informed dietary decisions.</li>
+                      <li>Awarded Best Booth for our outstanding presentation to the jury, effectively showcasing our project and impressing the evaluators during their visit.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item relative pl-12 pb-12">
+                  <div class="absolute left-0 top-1.5 h-10 flex items-center">
+                    <span class="block w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l2.5 2.5a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414L11 8.586V7z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-gray-900">Bangkit Academy 2023 Cohort - Machine Learning</h3>
+                    <p class="text-sm text-gray-500 mt-1">February 2023 - July 2023</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+                      <li>Learn more in-depth material about Machine Learning methods, such as TensorFlow, Neural Networks, Time Series, etc.</li>
+                      <li>Learn to work in teams to complete assigned projects and brainstorm ideas with other team members.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work/Projects -->
+        <section id="work" class="py-16 px-6 md:px-12 bg-white">
+          <div class="max-w-6xl mx-auto">
+            <span class="text-sm font-semibold text-red-600 uppercase">My Work</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Recent Projects</h2>
+            <div class="flex flex-wrap gap-2 justify-left my-8">
+              <button class="filter-btn bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium" data-filter="all">All</button>
+              <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium" data-filter="data-scientist">Data Scientist</button>
+              <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium" data-filter="data-analyst">Data Analyst</button>
+              <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium" data-filter="publication">Publication</button>
+            </div>
+
+            <div id="project-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Project Card -->
+              <div class="project-card" data-category="publication">
+                <a href="https://ieeexplore.ieee.org/document/10941516" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-papertwo.png" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">April 02, 2025 | Publication</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Two-Step Random Forest Classification with L1 Regularization Feature Selection for IoT Malware Detection</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-scientist">
+                <a href="#" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-like.png" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">August 08, 2024 | Data Scientist</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Pilah Bijak: Classify Waste, Secure the Future!</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-analyst">
+                <a href="https://github.com/RyanBadai/Diabetes-Vision?tab=readme-ov-file" target="_blank" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-diabetesvision.png" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">July 18, 2024 | Data Analyst</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Diabetes-Vision: Balance Carbs, Balance Sugar, Beat Diabetes</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-scientist">
+                <a
+                  href="https://medium.com/@ryanbadai/song-recommended-system-using-content-based-filtering-with-k-means-clustering-dd264652ab90"
+                  target="_blank"
+                  class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col"
+                >
+                  <img src="images/project-music.png" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">June 13, 2024 | Data Scientist</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Song-Recommended System using Content-Based Filtering with K-Means Clustering</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-analyst">
+                <a href="https://github.com/RyanBadai/Breast-Cancer-Prediction-with-SVM" target="_blank" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-cancer.png" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">May 30, 2024 | Data Analyst</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Breast Cancer Prediction with Support Vector Machine (SVM) Method</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-analyst">
+                <a href="https://medium.com/@ryanbadai/power-bi-dashboard-for-sales-performance-12b7f54f7ac9" target="_blank" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-image-1.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">May 19, 2024 | Data Analyst</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Power BI Dashboard for Sales Performance</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-analyst">
+                <a href="https://github.com/RyanBadai/House_Price_Prediction" target="_blank" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-image-2.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">April 05, 2024 | Data Analyst</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">House Price Prediction</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-scientist">
+                <a href="https://repository.upnjatim.ac.id/20278" target="_blank" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-image-3.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">January 19, 2024 | Data Scientist</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">MobileNet-V2 VS Inception-V3 Architecture in Clothing Recognition Case</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-scientist">
+                <a
+                  href="https://medium.com/@ryanbadai/pneumonia-classification-using-cnn-method-with-inceptionv3-architecture-847363eb99b3"
+                  target="_blank"
+                  class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col"
+                >
+                  <img src="images/project-image-4.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">July 18, 2023 | Data Scientist</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Pneumonia Classification using CNN Method with InceptionV3 Architecture</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-scientist">
+                <a href="https://github.com/HartsaRizq/Capstone-Project-C23-PS463" target="_blank" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-image-5.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">June 15, 2023 | Data Scientist</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Clothing Recognition for Wearit Project in Bangkit Academy 2023</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="data-analyst">
+                <a href="https://medium.com/@ryanbadai/analysis-anime-dataset-in-python-489285d7ad24" target="_blank" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-image-6.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">December 05, 2022 | Data Analyst</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Analysis Anime Dataset in Python</h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card" data-category="publication">
+                <a href="https://prosiding-senada.upnjatim.ac.id/index.php/senada/article/view/47" target="_blank" class="block bg-gray-100 rounded-lg overflow-hidden shadow-md group h-full flex flex-col">
+                  <img src="images/project-image-7.jpg" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div class="p-5 flex-grow flex flex-col">
+                    <p class="text-xs text-gray-500">November 29, 2022 | Publication</p>
+                    <h3 class="mt-2 font-bold text-gray-900 flex-grow">Sentiment Analytic in Twitter with Keyword "Citayam Fashion Week</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-16 px-6 md:px-12 bg-gray-50">
+          <div class="max-w-4xl mx-auto text-center">
+            <span class="text-sm font-semibold text-red-600 uppercase">Get in Touch</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Contact Me</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 text-left">
+              <!-- Contact Item -->
+              <div class="bg-white p-6 rounded-lg shadow-md flex items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold">Email</h3>
+                  <p class="text-sm text-gray-600">ryanbadaia11@gmail.com</p>
+                </div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md flex items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold">Location</h3>
+                  <p class="text-sm text-gray-600">Sidoarjo, East Java, Indonesia</p>
+                </div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md flex items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold">Phone</h3>
+                  <p class="text-sm text-gray-600">(+62)81703542219</p>
+                </div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md flex items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold">Instagram</h3>
+                  <a href="https://www.instagram.com/ryanbadai/" target="_blank" class="text-sm text-red-600 hover:underline">@ryanbadai</a>
+                </div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md flex items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold">LinkedIn</h3>
+                  <a href="https://www.linkedin.com/in/ryanbadai/" target="_blank" class="text-sm text-red-600 hover:underline">in/ryanbadai</a>
+                </div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md flex items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold">Twitter / X</h3>
+                  <a href="https://x.com/RyanBadai2" target="_blank" class="text-sm text-red-600 hover:underline">@RyanBadai2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    <!-- end:colorlib-page -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Flexslider -->
-    <script src="js/jquery.flexslider-min.js"></script>
-    <!-- Owl carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Counters -->
-    <script src="js/jquery.countTo.js"></script>
-
-    <!-- MAIN JS -->
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
