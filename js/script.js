@@ -96,3 +96,71 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
   });
 });
+
+// --- Lightbox Logic ---
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.getElementById('lightbox-close');
+const prevBtn = document.getElementById('lightbox-prev');
+const nextBtn = document.getElementById('lightbox-next');
+
+let currentGallery = [];
+let currentIndex = 0;
+
+// Function to open lightbox
+function openLightbox(imgElement, gallery) {
+  currentGallery = Array.from(gallery);
+  currentIndex = currentGallery.indexOf(imgElement);
+  updateLightbox();
+  lightbox.classList.remove('hidden');
+  document.body.style.overflow = 'hidden'; // Prevent scrolling
+}
+
+// Function to update image
+function updateLightbox() {
+  const targetImg = currentGallery[currentIndex];
+  lightboxImg.src = targetImg.src;
+  document.getElementById('lightbox-caption').textContent = targetImg.alt || `Photo ${currentIndex + 1}`;
+}
+
+// Event Listeners for Images in Experience Section
+document.querySelectorAll('#experience .equal-img').forEach((img) => {
+  img.addEventListener('click', (e) => {
+    // Only navigate through images in the same card/grid
+    const parentGrid = e.target.closest('.grid');
+    const siblingImages = parentGrid.querySelectorAll('.equal-img');
+    openLightbox(e.target, siblingImages);
+  });
+});
+
+// Navigation logic
+prevBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+  updateLightbox();
+});
+
+nextBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  currentIndex = (currentIndex + 1) % currentGallery.length;
+  updateLightbox();
+});
+
+// Close logic
+const closeLightbox = () => {
+  lightbox.classList.add('hidden');
+  document.body.style.overflow = '';
+};
+
+closeBtn.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+// Keyboard Navigation
+document.addEventListener('keydown', (e) => {
+  if (lightbox.classList.contains('hidden')) return;
+  if (e.key === 'ArrowLeft') prevBtn.click();
+  if (e.key === 'ArrowRight') nextBtn.click();
+  if (e.key === 'Escape') closeLightbox();
+});

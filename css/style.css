@@ -37,11 +37,36 @@ body {
 }
 
 .typed-cursor {
-  color: #ef4444; /* red-500 */
+  color: #ef4444;
   animation: typedjsBlink 0.7s infinite;
 }
 @keyframes typedjsBlink {
   50% {
     opacity: 0;
   }
+}
+
+.equal-img {
+  width: 100%;
+  aspect-ratio: 800 / 533;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+#lightbox {
+  backdrop-filter: blur(5px);
+}
+
+#lightbox-img {
+  user-select: none;
+}
+
+ul.a {
+  list-style-position: outside;
+  list-style-type: disc;
 }
