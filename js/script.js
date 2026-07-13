@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Active link on scroll
   const observerOptions = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.3,
+    rootMargin: '-40% 0px -40% 0px',
+    threshold: 0,
   };
 
   const observer = new IntersectionObserver((entries) => {
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   var typed = new Typed('#typing-animation', {
-    strings: ['Ryan', 'a Data Scientist', 'a Data Analyst', 'a Data Engineer'],
+    strings: ['Ryan Badai A.', 'a Data Scientist', 'a Data Analyst', 'a Data Engineer'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
