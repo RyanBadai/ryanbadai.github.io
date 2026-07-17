@@ -61,7 +61,7 @@ body {
 }
 
 #lightbox {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
 }
 
 #lightbox-img {
@@ -76,4 +76,23 @@ ul.a {
 /* Ensure consistent anchor scrolling for fixed sidebar */
 main section {
   scroll-margin-top: 1.5rem;
+}
+
+/* Project Modal — styled to match Experience section cards */
+#project-modal-card {
+  /* border-radius, shadow, and transition match .bg-white.rounded-lg.shadow-md in Experience */
+  border-radius: 0.5rem;          /* = rounded-lg */
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* = shadow-md */
+  /* animation state (also set inline for immediate reset) */
+  opacity: 0;
+  transform: scale(0.9) translateY(1rem);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

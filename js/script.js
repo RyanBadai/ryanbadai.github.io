@@ -97,6 +97,65 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// --- Project Modal Logic ---
+const projectModal = document.getElementById('project-modal');
+const projectModalCard = document.getElementById('project-modal-card');
+const projectModalClose = document.getElementById('project-modal-close');
+const projectModalBackdrop = document.getElementById('project-modal-backdrop');
+const projectModalImg = document.getElementById('project-modal-img');
+const projectModalMeta = document.getElementById('project-modal-meta');
+const projectModalTitle = document.getElementById('project-modal-title');
+const projectModalDesc = document.getElementById('project-modal-desc');
+const projectModalLink = document.getElementById('project-modal-link');
+
+function openProjectModal(card) {
+  // Populate modal content from data attributes
+  projectModalImg.src = card.dataset.img || '';
+  projectModalImg.alt = card.dataset.title || '';
+  projectModalMeta.textContent = card.dataset.meta || '';
+  projectModalTitle.textContent = card.dataset.title || '';
+  projectModalDesc.textContent = card.dataset.desc || '';
+  projectModalLink.href = card.dataset.link || '#';
+
+  // Show modal container (flex)
+  projectModal.classList.remove('hidden');
+  projectModal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+
+  // Trigger zoom+float entrance animation
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      projectModalCard.style.opacity = '1';
+      projectModalCard.style.transform = 'scale(1) translateY(0)';
+    });
+  });
+}
+
+function closeProjectModal() {
+  // Reverse the animation
+  projectModalCard.style.opacity = '0';
+  projectModalCard.style.transform = 'scale(0.9) translateY(1rem)';
+  setTimeout(() => {
+    projectModal.style.display = 'none';
+    projectModal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }, 300);
+}
+
+// Attach click listeners to all project cards
+document.querySelectorAll('.project-card').forEach((card) => {
+  card.addEventListener('click', () => openProjectModal(card));
+});
+
+// Close on button, backdrop, or Escape key
+projectModalClose.addEventListener('click', closeProjectModal);
+projectModalBackdrop.addEventListener('click', closeProjectModal);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && projectModal.style.display === 'flex') {
+    closeProjectModal();
+  }
+});
+
 // --- Lightbox Logic ---
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
